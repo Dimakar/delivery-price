@@ -27,9 +27,8 @@ public class DeliveryCalculator {
 
         price = price * workload.getMultiplier();
 
-        if (price < 400) {
-            price = 400;
-        }
+        if (price < 400) return 400;
+
         return price;
     }
 
